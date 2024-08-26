@@ -62,7 +62,7 @@ print("F1-Score:", f1_score(test_y, logisticModel.predict(test_x)))
 
 print("LogLoss:", log_loss(test_y, logisticModel.predict_proba(test_x)[:, 1]))
 #----------------------------------------------------------------------------------------------------
-treeModel = DecisionTreeClassifier(criterion="entropy", max_depth=4)
+treeModel = DecisionTreeClassifier(criterion="entropy", max_depth=5)
 treeModel.fit(train_x, train_y)
 print("\nDecission Tree stats: ")
 
